@@ -1,0 +1,13 @@
+{
+    "manifest_version": 3,
+    "name": "Course Feedback Automator",
+    "version": "1.0",
+    "permissions": ["activeTab", "scripting"],
+    "content_scripts": [
+      {
+        "matches": ["*://flexstudent.nu.edu.pk/Student/CourseFeedback*", "*://flexstudent.nu.edu.pk/Student/FeedBackQuestions"],
+        "js": ["content.js"]
+        }
+    ]
+  }
+  
